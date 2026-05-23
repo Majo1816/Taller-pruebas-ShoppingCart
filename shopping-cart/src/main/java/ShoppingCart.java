@@ -29,7 +29,7 @@ public class ShoppingCart {
      if (percentage < 0 || percentage > 100) {
         throw new IllegalArgumentException("Invalid discount percentage");
      }
-        return 0; 
+        return getTotal() *(1-porcentaje/100.0); 
 }
 
     public int getItemCount() {
