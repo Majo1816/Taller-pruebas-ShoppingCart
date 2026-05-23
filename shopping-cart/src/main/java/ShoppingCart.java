@@ -25,12 +25,12 @@ public class ShoppingCart {
             .sum();
     }
 
-    public double applyDiscount(double percentage) {
-        if (percentage < 0 || percentage > 100) {
-            throw new IllegalArgumentException("Invalid discount percentage");
-        }
-        return getTotal() * (1 - percentage / 100.0);
-    }
+     public double applyDiscount(double percentage) {
+     if (percentage < 0 || percentage > 100) {
+        throw new IllegalArgumentException("Invalid discount percentage");
+     }
+        return 0; 
+}
 
     public int getItemCount() {
         return items.size();
